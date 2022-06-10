@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  background-color: wheat;
+}
+
+canvas {
+  background: white;
+  border: 10px solid black;
+}
+
+/* botton#download */
