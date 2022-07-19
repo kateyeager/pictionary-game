@@ -63,18 +63,75 @@ canvas.addEventListener("mouseup", function(e) {
 });
 
 // Get buttons
-const clearButton = document.querySelector('#erase');
+const blackButton = document.querySelector("#black");
+const whiteButton = document.querySelector('#white');
 const coralButton = document.querySelector('#coral');
+const redButton = document.querySelector('#red');
+const orangeButton = document.querySelector('#orange');
+const yellowButton = document.querySelector('#yellow');
+const greenButton = document.querySelector('#green');
+const blueButton = document.querySelector('#blue');
+const purpleButton = document.querySelector('#purple');
+const pinkButton = document.querySelector('#pink');
+const clearButton = document.querySelector('#erase');
+
 
 // Erase
 clearButton.addEventListener('click', () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);  
 });
 
+// Change color to black
+blackButton.addEventListener('click', () => {
+    ctx.strokeStyle = '#161a1d';
+} );
+
+// Change color to white
+whiteButton.addEventListener('click', () => {
+    ctx.strokeStyle = 'white';
+} );
+
 // Change color to Coral
 coralButton.addEventListener('click', () => {
   ctx.strokeStyle = '#FF7F50';
 });
+
+// Change color to red
+redButton.addEventListener('click', () => {
+  ctx.strokeStyle = '#ff0c2c';
+});
+
+// Change color to orange
+orangeButton.addEventListener('click', () => {
+  ctx.strokeStyle = '#F58e16';
+});
+
+// Change color to yellow
+yellowButton.addEventListener('click', () => {
+  ctx.strokeStyle = '#FFFF00';
+});
+
+// Change color to green
+greenButton.addEventListener('click', () => {
+  ctx.strokeStyle = '#29ca40';
+});
+
+// Change color to blue
+blueButton.addEventListener('click', () => {
+  ctx.strokeStyle = '#0c43ff';
+});
+
+// Change color to purple
+purpleButton.addEventListener('click', () => {
+  ctx.strokeStyle = '#8000ff';
+});
+
+// Change color to pink
+pinkButton.addEventListener('click', () => {
+  ctx.strokeStyle = '#ff00ff';
+});
+
+
 
 // Download Button
 downloadButton.addEventListener('click', () => {
