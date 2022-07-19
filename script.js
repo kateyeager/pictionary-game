@@ -91,11 +91,6 @@ whiteButton.addEventListener('click', () => {
     ctx.strokeStyle = 'white';
 } );
 
-// Change color to Coral
-coralButton.addEventListener('click', () => {
-  ctx.strokeStyle = '#FF7F50';
-});
-
 // Change color to red
 redButton.addEventListener('click', () => {
   ctx.strokeStyle = '#ff0c2c';
